@@ -1,18 +1,15 @@
-# Program Perhitungan Pembayaran Langganan Aplikasi Streaming Musik (Tanpa Looping)
-
-# Data login
-nama_terdaftar = "Farel Ronalvi"
+nama_terdaftar = "Saiki"
 nim_terdaftar = "123456789"
-
 # Biaya langganan tetap
 biaya_langganan = 1500000
 
+
 # Fungsi login
 def login():
-    print("=== LOGIN APLIKASI STREAMING MUSIK ===")
+    print("=== Selamat Datang Silahkan Langsung Pilih Paket Langganan nya Namun sebelumnya ===")
     nama = input("Masukkan Nama: ")
     nim = input("Masukkan NIM: ")
-    
+   
     if nama == nama_terdaftar and nim == nim_terdaftar:
         print("\nLogin berhasil!\n")
         return True
@@ -20,9 +17,11 @@ def login():
         print("\nLogin gagal! Nama atau NIM salah.\n")
         return False
 
+
 # Fungsi hitung total bayar
 def hitung_total(biaya, admin):
     return biaya + (biaya * admin)
+
 
 # Main program
 if login():
@@ -32,7 +31,9 @@ if login():
     print("3. Gold")
     print("4. Platinum")
 
+
     pilihan = input("Masukkan pilihan paket (1-4): ")
+
 
     if pilihan == "1":
         total = hitung_total(biaya_langganan, 0.01)
@@ -43,6 +44,7 @@ if login():
         print(f"Total Bayar: Rp {int(total):,}")
         print("Keuntungan: Akses dasar ke lagu-lagu populer.")
 
+
     elif pilihan == "2":
         total = hitung_total(biaya_langganan, 0.03)
         print("\n=== DETAIL PEMBAYARAN ===")
@@ -51,6 +53,7 @@ if login():
         print("Biaya Administrasi: 3%")
         print(f"Total Bayar: Rp {int(total):,}")
         print("Keuntungan: Akses lagu premium dan playlist kustom.")
+
 
     elif pilihan == "3":
         total = hitung_total(biaya_langganan, 0.05)
@@ -61,6 +64,7 @@ if login():
         print(f"Total Bayar: Rp {int(total):,}")
         print("Keuntungan: Akses lagu premium, playlist kustom, dan mode offline.")
 
+
     elif pilihan == "4":
         total = hitung_total(biaya_langganan, 0.07)
         print("\n=== DETAIL PEMBAYARAN ===")
@@ -69,6 +73,7 @@ if login():
         print("Biaya Administrasi: 7%")
         print(f"Total Bayar: Rp {int(total):,}")
         print("Keuntungan: Akses semua fitur, playlist kustom, mode offline, dan konten eksklusif artis.")
+
 
     else:
         print("\nPilihan tidak valid.")
