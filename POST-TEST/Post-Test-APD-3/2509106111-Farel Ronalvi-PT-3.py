@@ -1,10 +1,9 @@
 nama_terdaftar = "Saiki"
 nim_terdaftar = "123456789"
-# Biaya langganan tetap
+
 biaya_langganan = 1500000
 
 
-# Fungsi login
 def login():
     print("=== Selamat Datang Silahkan Langsung Pilih Paket Langganan nya Namun sebelumnya ===")
     nama = input("Masukkan Nama: ")
@@ -18,12 +17,10 @@ def login():
         return False
 
 
-# Fungsi hitung total bayar
 def hitung_total(biaya, admin):
     return biaya + (biaya * admin)
 
 
-# Main program
 if login():
     print("=== PILIH PAKET LANGGANAN ===")
     print("1. Bronze")
