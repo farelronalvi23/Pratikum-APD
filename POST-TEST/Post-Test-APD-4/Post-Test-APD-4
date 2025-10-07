@@ -75,5 +75,3 @@ else:
         print("Bonus: Anda mendapatkan Poster Film Eksklusif!")
 
     print(f"Total bayar akhir: Rp {total_bayar:,}")
-
-    
