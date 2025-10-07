@@ -69,9 +69,3 @@ else:
         print(f"Potongan 12%: Rp {potongan:,}")
     elif total_bayar >= 1500000:
         potongan = total_bayar * 0.08
-        total_bayar -= potongan
-        print(f"Potongan 8%: Rp {potongan:,}")
-    elif total_bayar >= 2000000:
-        print("Bonus: Anda mendapatkan Poster Film Eksklusif!")
-
-    print(f"Total bayar akhir: Rp {total_bayar:,}")
